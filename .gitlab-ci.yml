@@ -1,0 +1,25 @@
+before_script:
+  - bundle install
+
+after_script:
+  - rm secrets
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - npm install
+
+test_job:
+  stage: test
+  script:
+    - mocha --recursive
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "TODO"
