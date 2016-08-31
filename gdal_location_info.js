@@ -74,6 +74,10 @@ var elevation = function(file) {
     return elevate;
 };
 
+// Use as a module
+module.exports = elevation;
+
+/*
 if (require.main === module) {
     if (process.argv.length < 3) {
     	// Show usage. At least the DEM file should be specified as parameter.
@@ -97,9 +101,9 @@ No reprojection is performed, so both DEM and vector file should be in the same 
         }
     }
 } else {
-    // Use as a module
-    module.exports = elevation;
+
 }
+*/
 /*
 var dataset = gdal.open("//Nicosia/z/geotif3D/Catlunya_Pirineu.tif");
 var band = dataset.bands.get(1);

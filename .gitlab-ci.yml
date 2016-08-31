@@ -1,9 +1,3 @@
-before_script:
-  - bundle install
-
-after_script:
-  - rm secrets
-
 stages:
   - build
   - test
