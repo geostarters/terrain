@@ -1,6 +1,7 @@
 'use strict';
 var config = {
-    demFile: "DEM.tif"
+    demFile: "DEM.tif",
+    pathMainWeb: "terrain",
 };
 
 module.exports = config;
