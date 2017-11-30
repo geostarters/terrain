@@ -11,9 +11,11 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "gdal": "^0.9.2",
+    "gdal": "^0.9.6",
     "jade": "~1.11.0",
-    "morgan": "~1.7.0"
+    "morgan": "~1.7.0",
+    "request": "~2.83.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

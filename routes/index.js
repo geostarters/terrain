@@ -8,9 +8,9 @@ router.get('/' + config.pathMainWeb + '/', function(req, res, next) {
   res.render('index', { title: 'Add Z Service' });
 });
 
-router.post('/' + config.pathMainWeb + '/', function(req, res, next) {
+router.post('/' + config.pathMainWeb + '/', async function(req, res, next) {
   var geojson = req.body;
-  var geojson3D = el.featureCollection(geojson);
+  var geojson3D = await el.featureCollection(geojson);
   res.send(geojson3D);
 });
 
