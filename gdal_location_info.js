@@ -64,7 +64,7 @@ var elevation = function(file) {
           var features = collection.features;
           var count = features.length;
           for (var i = 0; i < count; i++) {
-              features[i] = elevate.feature(features[i]);
+            features[i] = elevate.feature(features[i]);
           }
           collection.features = features;
           return collection;

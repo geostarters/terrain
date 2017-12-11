@@ -1,6 +1,8 @@
 'use strict';
 var config = {
-    demFile: "DEM.tif"
+    demFile: "Catlunya_Pirineu.tif"
 };
+
+//demFile: "DEM.tif"
 
 module.exports = config;
