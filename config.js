@@ -1,8 +1,7 @@
 'use strict';
 var config = {
-    demFile: "Catlunya_Pirineu.tif"
+    demFile: "DEM.tif",
+    pathMainWeb: "terrain",
 };
-
-//demFile: "DEM.tif"
 
 module.exports = config;

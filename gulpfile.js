@@ -5,7 +5,7 @@ var nodemon = require('gulp-nodemon');
 //"start": "node ./bin/www"
 gulp.task('start', function () {
   nodemon({
-    script: 'bin/www'
-  , ext: 'js html'
+    script: 'bin/www', 
+    ext: 'js html'
   })
 });

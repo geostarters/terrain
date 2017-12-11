@@ -4,14 +4,13 @@ var config = require('../config');
 var gdal_elevate = require('../gdal_location_info');
 var el = gdal_elevate(config.demFile);
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  //console.log(terrain.getTerrain());
-  res.render('index', { title: 'Express' });
+router.get('/' + config.pathMainWeb + '/', function(req, res, next) {
+  res.render('index', { title: 'Add Z Service' });
 });
 
-router.post('/', function(req, res, next) {
+router.post('/' + config.pathMainWeb + '/', async function(req, res, next) {
   var geojson = req.body;
-  var geojson3D = el.featureCollection(geojson);
+  var geojson3D = await el.featureCollection(geojson);
   res.send(geojson3D);
 });
 
